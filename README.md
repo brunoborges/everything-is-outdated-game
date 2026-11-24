@@ -47,3 +47,7 @@ differently from a real system.
 
 This repository is a spoiler-free introduction; it does not contain the game
 implementation or solutions.
+
+## Privacy
+
+See the [Privacy Policy](PRIVACY.md).
