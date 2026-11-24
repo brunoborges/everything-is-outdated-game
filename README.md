@@ -24,5 +24,19 @@ the results back to the browser.
 
 **Your commands do not run on your computer or update its software.**
 
+## Running on Cloudflare
+
+- The browser interface is served using
+  [Workers Static Assets](https://developers.cloudflare.com/workers/static-assets/).
+  Cloudflare also manages the custom domain and HTTPS certificate.
+- A [Cloudflare Worker](https://developers.cloudflare.com/workers/) handles
+  session and command requests, runs the simulation, and returns terminal
+  output and dashboard updates. The simulation and package catalogue stay on
+  the server rather than being included in the browser assets.
+- Each game session has its own SQLite-backed
+  [Durable Object](https://developers.cloudflare.com/durable-objects/) to
+  persist progress. The browser remembers the session ID so a game can be
+  resumed; sessions expire after seven days of inactivity.
+
 This repository is a spoiler-free introduction; it does not contain the game
 implementation or solutions.
