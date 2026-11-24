@@ -16,6 +16,9 @@ your elapsed time.
 
 There is no checklist of answers here: discovery is part of the game.
 
+For another challenge, ask an AI agent with browser-use or computer-use
+capabilities to play and see if it can crack the game.
+
 ## How it works
 
 The browser displays a simulated terminal alongside the dashboard. Commands are
