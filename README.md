@@ -22,6 +22,10 @@ The browser displays a simulated terminal alongside the dashboard. Commands are
 handled by a server-side simulation, which tracks your game session and sends
 the results back to the browser.
 
+The simulated Bash shell and basic Unix utilities are deliberately limited.
+Some commands, options, and shell features are unavailable or behave
+differently from a real system.
+
 **Your commands do not run on your computer or update its software.**
 
 ## Running on Cloudflare
